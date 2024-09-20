@@ -130,7 +130,7 @@
 
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-3 gap-4 p-6">
                 <div class=" col-span-2">
                     <h2 class="text-2xl py-3 font-bold">Select Your Seat</h2>
 
@@ -238,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class=" border-l-2 pl-5 border-dashed border-gray-300">
                     <h2 class="text-2xl py-3 font-bold border-b-2 border-dashed">Details</h2>
                     <div>
                         <h3 class="flex justify-between py-3 font-bold">
@@ -251,25 +251,67 @@
                         </h3>
                     </div>
                     <div>
-                        <h3 class=" py-3 text-xl text-red-600 font-bold text-center">No seat booked</h3>
+                        <h3 class=" py-3 text-xl text-red-600 font-bold text-center">No Seat Booked</h3>
                     </div>
-                    <div class="flex justify-between font-bold py-3">
+                    <div class="flex justify-between font-bold py-3 my-3">
                         <p class="">Total Price</p>
                         <p>BDT : <span>****</span></p>
                     </div>
-                    <div class="flex items-center gap-2 border-y-2 border-dashed">
-                        <input type="text" placeholder="have a coupon?" class="py-3 px-2 ">
+                    <div class="flex items-center justify-between gap-3 ">
+                        <input type="text" placeholder="have a coupon?" class="py-3 px-2 w-full rounded-xl">
                         <button class="btn bg-primary" disabled>Apply</button>
                     </div>
-                    <div class="flex justify-between font-bold py-3"></div>
+                    <div class="flex justify-between font-bold py-3 my-3">
+
                         <p class="">Grand Price</p>
                         <p>BDT : <span>****</span></p>
                     </div>
-                    
+                    <!-- form -->
+                    <div class="bg-base-200 ">
+                        <div class="flex-col lg:flex-row-reverse ">
+                            <div class="card bg-base-100 w-full max-w-full shrink-0 mx-auto">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Passenger Name*</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Passenger Name"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Email Address*</span>
+                                        </label>
+                                        <input type="email" placeholder="Enter Email" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Phone Number</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Phone Number" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button class="btn btn-primary" disabled>Next</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <!-- term and condition -->
+                            <div class="flex justify-between">
+                                <a href="#"
+                                    class=" underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out">Terms
+                                    and Condition</a>
+                                <a href="#"
+                                    class=" underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out">Cancellation
+                                    Policy</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            </div>
-
         </section>
         <!-- seat booking section end-->
     </main>
